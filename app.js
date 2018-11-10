@@ -3,6 +3,8 @@
 //
 var app = {
     version : '0.8.8',
+    targetEvent : 'click',
+    isCordova   : false,
 
     //
     setupImageList : function (list) {
@@ -22,10 +24,15 @@ var app = {
     },
     //
     onDOMContentLoaded : function () {
+    },
+    onDeviceReady : function () {
+        app.targetEvent = 'touchend';
         //
+        app.isCordova                                     = (typeof window.cordova !== "undefined");
         //
         //  Setup to load a list
         //
         app.setupImageList(demoRecord);
     }
+
 };

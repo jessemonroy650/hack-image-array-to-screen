@@ -34,5 +34,7 @@
     //
     // The 'DOMContentLoaded' event fires before the 'deviceready'
     document.addEventListener('DOMContentLoaded', app.onDOMContentLoaded, false);
+    // Wait for PhoneGap to load
+    document.addEventListener('deviceready', app.onDeviceReady, false);
 </script>
 </html>
