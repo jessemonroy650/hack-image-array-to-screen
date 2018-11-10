@@ -28,7 +28,8 @@ var app = {
     onDeviceReady : function () {
         app.targetEvent = 'touchend';
         //
-        app.isCordova                                     = (typeof window.cordova !== "undefined");
+        app.isCordova   = (typeof window.cordova !== "undefined");
+        $('#test').text('app.isCordova');
         //
         //  Setup to load a list
         //
