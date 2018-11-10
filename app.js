@@ -26,10 +26,12 @@ var app = {
     onDOMContentLoaded : function () {
     },
     onDeviceReady : function () {
+        document.getElementById('text').innerHTML = 'app.onDeviceReady';
         app.targetEvent = 'touchend';
         //
         app.isCordova   = (typeof window.cordova !== "undefined");
-        $('#test').text('app.isCordova');
+        //$('#test').text('app.isCordova');
+        document.getElementById('text').innerHTML = 'app.isCordova';
         //
         //  Setup to load a list
         //
