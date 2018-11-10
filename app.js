@@ -24,14 +24,13 @@ var app = {
     },
     //
     onDOMContentLoaded : function () {
+        app.isCordova   = (typeof window.cordova !== "undefined");
+        document.getElementById('test').innerHTML = 'app.isCordova';
     },
     onDeviceReady : function () {
-        document.getElementById('text').innerHTML = 'app.onDeviceReady';
+        document.getElementById('test').innerHTML = 'app.onDeviceReady';
         app.targetEvent = 'touchend';
         //
-        app.isCordova   = (typeof window.cordova !== "undefined");
-        //$('#test').text('app.isCordova');
-        document.getElementById('text').innerHTML = 'app.isCordova';
         //
         //  Setup to load a list
         //
