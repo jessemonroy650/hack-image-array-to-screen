@@ -6,20 +6,25 @@
     <meta http-equiv="Content-Security-Policy" 
              content="default-src * ;  media-src *;
                       style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
-                      script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
-	<meta name="viewport" content="width=device-width">
-	<script type="text/javascript;" src="cordova.js"></script>
+                      script-src * 'self' 'unsafe-inline' 'unsafe-eval';" />
+	<meta name="viewport" content="width=device-width" />
+	<script type="text/javascript;" charset="utf-8"  src="cordova.js"></script>
+	<script type="text/javascript;" charset="utf-8"  src="app.js"></script>
   </head>
 <body>
     <img width=100%; src="img/IMG_0634.jpg">
 
     <div id=test>no worky</div>
 
-    <img height=36 width=64 id=originalImage src="" >
+    <img id=originalImage src= width="64" height="36" >
 
-<script type="text/javascript;">
-    document.getElementById('originalImage').src = 'img/dad+benny.jpg';
-    document.getElementById('test').textContent  = 'The test works.';
-</script>
 </body>
+<script type="text/javascript;"  charset="utf-8" >
+    //   Wait for everthing to load
+    // The 'DOMContentLoaded' event fires before the 'deviceready'
+    document.addEventListener('DOMContentLoaded', app.onDOMContentLoaded, false);
+
+    //  "deviceready" is only available on phonegap
+    document.addEventListener("deviceready", app.onDeviceReady, false);
+</script>
 </html>

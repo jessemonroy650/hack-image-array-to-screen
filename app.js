@@ -8,13 +8,13 @@ var app = {
 
     //
     onDOMContentLoaded : function () {
-        document.getElementById('originalImage').src = 'image/IMG_0634.jpg';
+        document.getElementById('originalImage').src = 'img/IMG_0634.jpg';
         document.getElementById('test').innerHTML    = 'app.onDOMContentLoaded';
     },
     onDeviceReady : function () {
 
         app.targetEvent = 'touchend';
-        document.getElementById('originalImage').src = 'image/dad+benny.jpg';
+        document.getElementById('originalImage').src = 'img/dad+benny.jpg';
         document.getElementById('test').innerHTML    = 'app.onDeviceReady';
         //
         //
