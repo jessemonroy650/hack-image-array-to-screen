@@ -4,34 +4,22 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Hack Image Array to Screen</title>
     <meta http-equiv="Content-Security-Policy" 
-             content="default-src * 'self';
+             content="default-src * ;  media-src *;
                       style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
                       script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
 	<meta name="viewport" content="width=device-width">
-	<!-- Resource Information -->
 	<script type="text/javascript;" src="cordova.js"></script>
   </head>
 <body>
-    <h2>Hack Image Array to Screen</h2>
-    <img width=100%; src="image/IMG_0634.jpg">
-    <div id=imageList></div>
+    <img width=100%; src="img/IMG_0634.jpg">
 
-    <div id=test></div>
-    <div class=>
-        <h2>Image Workspace</h2>
-        <img height=36 width=64 id=originalImage src="" >
-        <canvas id=tempCanvas>Canvas not working. <b style=color:red;>Check Javascript.</b></canvas>
-    </div>
+    <div id=test>no worky</div>
 
-</body>
+    <img height=36 width=64 id=originalImage src="" >
+
 <script type="text/javascript;">
-    //
-    //   Wait for everthing to load
-    //
-    // The 'DOMContentLoaded' event fires before the 'deviceready'
-    //document.addEventListener('DOMContentLoaded', app.onDOMContentLoaded, false);
-    // Wait for PhoneGap to load
-    //document.addEventListener('deviceready', app.onDeviceReady, false);
-    document.getElementById('originalImage').src = 'image/dad+benny.jpg';
+    document.getElementById('originalImage').src = 'img/dad+benny.jpg';
+    document.getElementById('test').textContent  = 'The test works.';
 </script>
+</body>
 </html>
