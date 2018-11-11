@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Hack Image Array to Screen</title>
     <meta http-equiv="Content-Security-Policy" 
-             content="default-src * data: 'self';  media-src * 'self';
+             content="default-src * 'self';
                       style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
                       script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
 	<meta name="viewport" content="width=device-width">
@@ -31,6 +31,6 @@
     // The 'DOMContentLoaded' event fires before the 'deviceready'
     document.addEventListener('DOMContentLoaded', app.onDOMContentLoaded, false);
     // Wait for PhoneGap to load
-    document.addEventListener('deviceready', app.onDeviceReady, false);
+    //document.addEventListener('deviceready', app.onDeviceReady, false);
 </script>
 </html>
