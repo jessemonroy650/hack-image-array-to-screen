@@ -10,11 +10,10 @@
 	<meta name="viewport" content="width=device-width">
 	<!-- Resource Information -->
 	<script type="text/javascript;" src="cordova.js"></script>
-	<script type="text/javascript;" src="app.js"></script>
   </head>
 <body>
     <h2>Hack Image Array to Screen</h2>
-    <img src="image/IMG_0634.jpg">
+    <img width=100%; src="image/IMG_0634.jpg">
     <div id=imageList></div>
 
     <div id=test></div>
@@ -30,8 +29,9 @@
     //   Wait for everthing to load
     //
     // The 'DOMContentLoaded' event fires before the 'deviceready'
-    document.addEventListener('DOMContentLoaded', app.onDOMContentLoaded, false);
+    //document.addEventListener('DOMContentLoaded', app.onDOMContentLoaded, false);
     // Wait for PhoneGap to load
     //document.addEventListener('deviceready', app.onDeviceReady, false);
+    document.getElementById('originalImage').src = 'image/dad+benny.jpg';
 </script>
 </html>
