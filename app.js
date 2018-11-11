@@ -24,7 +24,7 @@ var app = {
     },
     //
     onDOMContentLoaded : function () {
-        app.isCordova   = (typeof window.cordova !== "undefined");
+        app.isCordova  = (typeof window.cordova !== "undefined");
         document.getElementById('originalImage').src = 'image/dad+benny.jpg';
     },
     onDeviceReady : function () {
