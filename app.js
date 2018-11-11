@@ -8,10 +8,13 @@ var app = {
 
     //
     onDOMContentLoaded : function () {
+        alert("onDOMContentLoaded");
+
         document.getElementById('originalImage').src = 'img/IMG_0634.jpg';
         document.getElementById('test').innerHTML    = 'app.onDOMContentLoaded';
     },
     onDeviceReady : function () {
+        alert("onDeviceReady");
 
         app.targetEvent = 'touchend';
         document.getElementById('originalImage').src = 'img/dad+benny.jpg';
