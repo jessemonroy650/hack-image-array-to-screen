@@ -25,16 +25,17 @@ var app = {
     //
     onDOMContentLoaded : function () {
         app.isCordova  = (typeof window.cordova !== "undefined");
-        document.getElementById('originalImage').src = 'image/dad+benny.jpg';
+        // document.getElementById('originalImage').src = 'image/dad+benny.jpg';
     },
     onDeviceReady : function () {
+        app.isCordova  = (typeof window.cordova !== "undefined");
         document.getElementById('test').innerHTML = 'app.onDeviceReady';
         app.targetEvent = 'touchend';
         //
         //
         //  Setup to load a list
         //
-        // app.setupImageList(demoRecord);
+        app.setupImageList(demoRecord);
     }
 
 };
