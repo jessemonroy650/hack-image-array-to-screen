@@ -5,7 +5,7 @@
         version     = "1.0.0"
         versionCode = "10" >
         <!-- https://build.phonegap.com/current-support -->
-        <preference name="phonegap-version" value="cli-6.0.0" />
+        <preference name="phonegap-version" value="cli-6.5.0" />
 
         <name>Image Array to Screen</name>
         <description>Image Array to Screen</description>
