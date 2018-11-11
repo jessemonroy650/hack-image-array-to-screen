@@ -25,7 +25,8 @@ var app = {
     //
     onDOMContentLoaded : function () {
         app.isCordova  = (typeof window.cordova !== "undefined");
-        // document.getElementById('originalImage').src = 'image/dad+benny.jpg';
+        document.getElementById('originalImage').src = 'image/dad+benny.jpg';
+        document.getElementById('test').innerHTML = 'app.onDOMContentLoaded';
     },
     onDeviceReady : function () {
         app.isCordova  = (typeof window.cordova !== "undefined");
